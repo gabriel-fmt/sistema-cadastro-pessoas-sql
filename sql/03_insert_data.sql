@@ -2,17 +2,18 @@
 -- ARQUIVO 03 - INSERT DATA
 -- Banco de Dados: sistema_cadastro
 -- ===============================================
-use sistema_cadastro;
+
+USE sistema_cadastro;
 
 -- ===============================================
 -- POPULAR TABELA PESSOA
 -- ===============================================
-insert into Pessoa (nome, dataNascimento, sexo, peso, altura, nacionalidade) values
+INSERT INTO pessoa (nome, dataNascimento, sexo, peso, altura, nacionalidade) VALUES
 ('Gabriel Ferreira', '2001-03-15', 'M', 72.5, 1.80, 'Brasileiro'),
 ('Michelle dos Santos Pires', '2003-12-18', 'F', 60.2, 1.65, 'Brasileira'),
 ('João Mendes', '1990-05-09', 'M', 82.0, 1.78, 'Brasileiro'),
 ('Carla Dias', '1985-02-10', 'F', 55.3, 1.60, 'Portuguesa'),
-('Ricardo Lima', '1999-08-30', 'M', 91.4, 1.90', 'Argentino'),
+('Ricardo Lima', '1999-08-30', 'M', 91.4, 1.90, 'Argentino'),
 ('Juliana Alves', '2000-12-01', 'F', 58.7, 1.70, 'Brasileira'),
 ('Thiago Martins', '1995-07-18', 'M', 75.0, 1.76, 'Brasileiro'),
 ('Fernanda Rocha', '1989-03-25', 'F', 62.5, 1.68, 'Chilena'),
@@ -32,8 +33,7 @@ insert into Pessoa (nome, dataNascimento, sexo, peso, altura, nacionalidade) val
 -- ===============================================
 -- POPULAR TABELA ENDERECO
 -- ===============================================
-
-insert into endereco (idPessoa, rua, numero, complemento, cidade, estado, cep) values
+INSERT INTO endereco (idPessoa, rua, numero, complemento, cidade, estado, cep) VALUES
 (1, 'Rua das Flores', '123', 'Apto 12', 'São Paulo', 'SP', '01001000'),
 (2, 'Av. Brasil', '455', NULL, 'Belo Horizonte', 'MG', '30110003'),
 (3, 'Rua do Comércio', '89', 'Casa', 'Salvador', 'BA', '40025000'),
@@ -58,7 +58,7 @@ insert into endereco (idPessoa, rua, numero, complemento, cidade, estado, cep) v
 -- ===============================================
 -- POPULAR TABELA CONTATO
 -- ===============================================
-insert into contato(idPessoa, telefone, email) values
+INSERT INTO contato (idPessoa, telefone, email) VALUES
 (1, '1199999-1111', 'gabriel@email.com'),
 (2, '3198888-2222', 'ana@email.com'),
 (3, '7197777-3333', 'joao@email.com'),
@@ -79,4 +79,3 @@ insert into contato(idPessoa, telefone, email) values
 (18, '5591111-9999', 'larissa@email.com'),
 (19, '2790000-1111', 'felipe@email.com'),
 (20, '8698888-2222', 'camila@email.com');
-
